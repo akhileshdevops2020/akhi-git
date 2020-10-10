@@ -1,0 +1,16 @@
+Project Name  -->> You&Me
+
+API
+
+1. Registration API
+ 1.1 -  registration1  
+        request {"email":"abc@gmail.com"}   or {"mobile_number":"8553585687","country_code":"+91"}
+		response {"status":true,"data":"{"reference_number":"qwerty12334555":"otp":"123456"}","message":"success"}
+		
+ 1.2   registration2
+        request {"otp":"123456","reference_number":"qwerty12334555"}   // as of now you cane give otp in response, but latar on you have to send otp as SMS or EMail
+		response {"status":true,"data":"{"reference_number":"abcd123456"}","message":"success"}
+		
+ 1.3   registration3
+        request {"username":"aditya1122","reference_number":"abcd123456","name":"aditya"}     // username is unique
+		response {"status":true,"data":"","message":"Registation Successful"}
